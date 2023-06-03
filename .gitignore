@@ -1,0 +1,23 @@
+# IDE or editor-specific files
+.vscode/
+.idea/
+
+# macOS specific files
+.DS_Store
+
+# Dependency directories
+node_modules/
+venv/
+
+# Compiled or build output files
+dist/
+build/
+*.class
+
+# Log files
+*.log
+logs/
+
+# Credentials or sensitive information files
+.env
+secrets.yaml
