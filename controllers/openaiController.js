@@ -34,5 +34,15 @@ const generateMeta = async (title) => {
     console.log(tags.data.choices[0].message);
 };
 
+const generateImage = async (desc) => {
+    const image = await openai.createImage({
+        prompt: desc,
+        n: 1,
+        size: "512x512",
+    });
+
+    console.log(image.data.data[0].url)
+}
+
 // Export the generateMeta function to make it accessible to other modules
-module.exports = { generateMeta };
+module.exports = { generateMeta, generateImage };
